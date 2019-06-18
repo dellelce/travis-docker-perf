@@ -7,4 +7,4 @@ branches:
 services:
  - docker
 env:
-script: free && echo && ls  -ltd /var/lib && sudo du -ks /var/lib/docker
+script: free && echo && df -k  && sudo ls  -ltd /var/lib/docker && sudo du -ks /var/lib/docker &&  sudo ./relibdo.sh
