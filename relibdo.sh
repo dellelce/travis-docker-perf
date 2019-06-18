@@ -55,6 +55,12 @@ relibdocker || exit $?
 
 #####
 
+echo; echo
+docker ps -a
+docker images
+
+#####
+
 start=$(date +%s)
 PROFILE="opengl" DOCKER_IMAGE="dellelce/opengl-base" PREFIX="/app/opengl" \
  ./mkit-wrapper.sh yes || exit $?
@@ -66,5 +72,10 @@ echo
 echo "Elapsed in tmpfs conguration: ${elapsed_tmpfs}"
 echo
 
+#####
+
+echo; echo
+docker ps -a
+docker images
 
 ## EOF ##
