@@ -7,4 +7,4 @@ branches:
 services:
  - docker
 env:
-script: ps -ef && docker info
+script: free && echo && ls  -ltd /var/lib && sudo du -ks /var/lib/docker
