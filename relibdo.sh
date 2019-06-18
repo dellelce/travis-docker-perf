@@ -34,7 +34,7 @@ mkit_url="https://github.com/dellelce/mkit/archive/0.0.37.tar.gz"
 
 wget -O mkit.tar.gz -q "$mkit_url" || exit $?
 tar xzf mkit.tar.gz
-ln -s $(find . -name mkit.sh) .
+cd $(dirname $(find . -name mkit.sh))
 
 # build opengl with default configuration
 
