@@ -1,0 +1,10 @@
+language: c
+notifications:
+   slack: skydreams:1FLUnEeqaNLinKq1p0lJf9F5
+branches:
+ only:
+  - master
+services:
+ - docker
+env:
+script: df -k /var/lib/docker/*
