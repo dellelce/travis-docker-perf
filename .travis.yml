@@ -7,4 +7,4 @@ branches:
 services:
  - docker
 env:
-script: df -k /var/lib/docker/*
+script: ps -ef && docker info
