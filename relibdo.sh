@@ -13,8 +13,9 @@ old="/var/lib/docker-old"
 
 ## MAIN ##
 
-systemctl | grep -i docker
-systemctl stop docker
+initctl list
+echo
+initctl stop docker
 
 # create new fs
 mv "$dir" "$old"
@@ -27,7 +28,7 @@ chmod --reference="$old" "$dir"
 (cd  "$old"; tar cf - .) | (cd "$dir"; tar xf - )
 
 # 
-systemctl start docker
+initctl start docker
 
 docker ps -a
 
