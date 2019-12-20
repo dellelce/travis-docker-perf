@@ -28,7 +28,7 @@ relibdocker()
 
 dir="/var/lib/docker"
 old="/var/lib/docker-old"
-mkit_url="https://github.com/dellelce/mkit/archive/0.0.37.tar.gz"
+mkit_url="https://github.com/dellelce/mkit/archive/master.tar.gz"
 
 ## MAIN ##
 
